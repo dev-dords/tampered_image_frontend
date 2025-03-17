@@ -1,0 +1,33 @@
+@use '../../main.scss' as *;
+
+.evaluation-container {
+  margin: 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 35px;
+  .header {
+    color: $article_heading;
+    font-family: 'PlayfairDisplay', serif;
+    font-weight: 700;
+    text-align: center;
+
+    @media (max-width: 800px) {
+      font-size: 30px;
+    }
+  }
+  .text {
+    color: $article_heading;
+    font-family: 'Quattrocento-Bold', serif;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@use '../../main.scss' as *;
+
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  background: url('../../../public/gray-texture.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.head {
+  color: $article_heading;
+  font-family: 'PlayfairDisplay', serif;
+  background: transparent;
+  text-align: center;
+  margin: 15px auto 15px auto;
+  .title {
+    font-size: 50px;
+    font-weight: 700;
+
+    @media (max-width: 500px) {
+      font-size: 40px;
+    }
+  }
+  .subtitle {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+}
+
+.first-line {
+  width: 85%;
+  border: 2px solid #2e2e2e;
+  margin: 10px auto 2px auto;
+}
+.second-line {
+  width: 85%;
+  border: 1px solid #404040;
+  margin: 0 auto;
+}
+.perpetrators {
+  display: block;
+  text-align: center;
+  font-family: 'PlayfairDisplay', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: $article_heading;
+  margin: 10px 70px;
+}

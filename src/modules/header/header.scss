@@ -1,0 +1,16 @@
+@use '../../main.scss' as *;
+
+h3, p {
+  color: $article_heading;
+  font-family: 'Quattrocento-Regular', serif;
+  font-size: 14px;
+  background: transparent;
+}
+
+h2 {
+  color: $article_heading;
+  font-family: 'Quattrocento-Regular', serif;
+  font-size: 25px;
+  background: transparent;
+
+}

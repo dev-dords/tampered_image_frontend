@@ -1,0 +1,118 @@
+@use '../../main.scss' as *;
+
+.content-container {
+  margin: 20px 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  .content-essay {
+    flex: 1;
+  }
+  .content-img{
+    flex: 1.5;
+  }
+  .content-essay span {
+    color: $article_heading;
+    font-family: 'Quattrocento-Regular', serif;
+    font-size: 12px;
+    text-align: justify;
+    display: block;
+
+    &::first-letter {
+      font-size: 20px;
+      font-weight: bold;
+      background-color: black;
+      color: white;
+      padding: 2px 10px;
+      margin: 0 5px 0 0;
+    }
+  }
+  .content-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .uploaded {
+      width: 250px;
+      height: 250px;
+      object-fit: center;
+
+      @media (max-width: 800px) {
+        width: 400px;
+        height: 400px;
+      }
+      @media (max-width: 600px) {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    .stamp {
+      width: 250px;
+      margin-bottom:50px;
+      height: auto;
+      object-fit: center;
+      position: absolute;
+      z-index: 100;
+      animation: stamp-animation 0.4s ease-in-out forwards;
+
+      @media (max-width: 800px) {
+        width: 400px;
+      }
+      @media (max-width: 600px) {
+        width: 300px;
+      }
+    }
+
+    @keyframes stamp-animation {
+      0% {
+      transform: scale(4) rotate(0deg);
+      opacity: 0;
+      }
+      30% {
+      transform: scale(3) rotate(40deg);
+      opacity: 0.5;
+      }
+      100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+      }
+    }
+    .controls{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 250px;
+
+      @media (max-width: 800px) {
+        width: 400px;
+      }
+
+      @media (max-width: 600px) {
+        width: 300px;
+      }
+    }
+    button {
+      min-width: 100%;
+      padding: 5px 0px;
+      background-color: #404040;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'Quattrocento-Bold', serif;
+      font-size: 14px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #2e2e2e;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .content-essay:first-child,
+    .content-essay:last-child {
+      display: none;
+    }
+  }
+}
