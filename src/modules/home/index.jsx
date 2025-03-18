@@ -25,8 +25,14 @@ const HomePage = () => {
       <EvaluationComponent
         verdict={evaluation}
       />
-    </div>
-  )
+      <hr className='first-line' />
+      <hr className='second-line' />
+      <div className='footer'>
+        <span className='warning' style={{ marginTop: '5px' }}>‼️This early version is still evolving! We’re expanding test cases and continuously enhancing the model for better accuracy and reliability. </span>
+        <br />
+        <span className='warning'>📩 See any bugs and mispredictions? Don’t worry—we value your feedback! Please let us know by sharing your thoughts: jdorado.MSDSPT2025B@aim.edu</span>
+      </div>
+    </div>)
 }
 
 export default HomePage

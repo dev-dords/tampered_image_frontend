@@ -4,11 +4,24 @@
 .home-container {
   max-width: 800px;
   margin: 0 auto;
-  height: 100vh;
-  background: url('../../../public/gray-texture.jpg') no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 100vh;
+  background: url('../../../public/gray-texture.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  .footer {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.2;
+    .warning {
+      display: block;
+      color: $article_heading;
+      font-family: 'PlayfairDisplay', serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      word-wrap: break-word;
+    }
+  }
 }
 
 .head {
